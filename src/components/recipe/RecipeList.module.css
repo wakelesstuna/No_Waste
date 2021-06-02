@@ -1,0 +1,14 @@
+.recipe__list__container::-webkit-scrollbar {
+  display: none;
+}
+
+.recipe__list__container {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+.recipe__list__wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}

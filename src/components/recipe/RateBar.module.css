@@ -1,0 +1,21 @@
+.rate__container {
+  display: flex;
+  margin-left: 0.5em;
+}
+
+.rate__wrapper {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate__wrapper svg {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+
+.rate__counter {
+  font-size: 0.8rem;
+}

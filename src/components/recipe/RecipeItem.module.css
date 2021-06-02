@@ -1,0 +1,29 @@
+li {
+  list-style: none;
+}
+
+.recipe__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__wrapper {
+  display: flex;
+}

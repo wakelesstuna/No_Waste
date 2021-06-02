@@ -1,0 +1,23 @@
+.info__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 2em;
+  padding: 0.5em 2em;
+  background: greenyellow;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.time__counter,
+.ingredient__counter {
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+}
