@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/No_Waste/static/css/main.34a907f5.chunk.css",
+    "main.js": "/No_Waste/static/js/main.0dd5c312.chunk.js",
+    "main.js.map": "/No_Waste/static/js/main.0dd5c312.chunk.js.map",
+    "runtime-main.js": "/No_Waste/static/js/runtime-main.1b8efd7d.js",
+    "runtime-main.js.map": "/No_Waste/static/js/runtime-main.1b8efd7d.js.map",
+    "static/js/2.9fc11d15.chunk.js": "/No_Waste/static/js/2.9fc11d15.chunk.js",
+    "static/js/2.9fc11d15.chunk.js.map": "/No_Waste/static/js/2.9fc11d15.chunk.js.map",
+    "index.html": "/No_Waste/index.html",
+    "static/css/main.34a907f5.chunk.css.map": "/No_Waste/static/css/main.34a907f5.chunk.css.map",
+    "static/js/2.9fc11d15.chunk.js.LICENSE.txt": "/No_Waste/static/js/2.9fc11d15.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1b8efd7d.js",
+    "static/js/2.9fc11d15.chunk.js",
+    "static/css/main.34a907f5.chunk.css",
+    "static/js/main.0dd5c312.chunk.js"
+  ]
+}
