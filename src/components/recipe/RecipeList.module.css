@@ -5,10 +5,16 @@
 .recipe__list__container {
   display: flex;
   width: 100%;
-  overflow-x: scroll;
 }
 .recipe__list__wrapper {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 1em 2em;
   display: flex;
+  padding-right: 3em;
+  overflow-x: scroll;
+}
+
+.recipe__list__title {
+  position: absolute;
+  left: 2.5em;
 }

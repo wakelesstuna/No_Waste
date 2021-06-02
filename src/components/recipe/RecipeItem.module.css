@@ -26,4 +26,11 @@ img {
 
 .info__wrapper {
   display: flex;
+  margin: auto;
+}
+
+.title {
+  font-size: 1rem;
+  min-height: 6vh;
+  padding: 0 1em;
 }

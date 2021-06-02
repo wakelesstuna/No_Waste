@@ -7,7 +7,6 @@ function RecipePage() {
       <RecipeList />
       <RecipeList />
       <RecipeList />
-      <RecipeList />
       <Footer />
     </div>
   );

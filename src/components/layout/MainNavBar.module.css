@@ -1,7 +1,7 @@
 .menu__bar__bottom {
   background-color: #fff;
   height: 8vh;
-  width: 100%;
+  width: 100vw;
   z-index: 9999;
   position: fixed;
   left: 0px;

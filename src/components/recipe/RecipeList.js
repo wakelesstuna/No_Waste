@@ -5,17 +5,17 @@ import RecipeItem from "./RecipeItem";
 const DUMMY_DATA = [
   {
     id: 1,
-    title: "pasta",
+    title: "pasta carbonara",
     image:
       "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_228209/cf_259/kycklingcarbonara_med_grona_artor.jpg",
     ingredients: [
       {
         id: 1,
-        name: "gurka",
+        name: "bacon",
       },
       {
         id: 2,
-        name: "tomat",
+        name: "ärtor",
       },
     ],
     score: [
@@ -42,9 +42,9 @@ const DUMMY_DATA = [
   },
   {
     id: 2,
-    title: "pasta",
+    title: "linssallad med kyckling och curryyoghurt",
     image:
-      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_228209/cf_259/kycklingcarbonara_med_grona_artor.jpg",
+      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_224457/cf_259/linssallad_med_kyckling_och_curryyoghurt.jpg",
     ingredients: [
       {
         id: 1,
@@ -73,15 +73,15 @@ const DUMMY_DATA = [
         comment: "Some dummy text",
       },
     ],
-    timeToCockMin: 30,
+    timeToCockMin: 40,
     description: "Som dummy text goes here",
     instruction: "Some instruktions gors here",
   },
   {
     id: 3,
-    title: "pasta",
+    title: "grillad grillost i pitabröd",
     image:
-      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_228209/cf_259/kycklingcarbonara_med_grona_artor.jpg",
+      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_229773/cf_259/grillad_grillost_i_pitabrod.jpg",
     ingredients: [
       {
         id: 1,
@@ -116,9 +116,9 @@ const DUMMY_DATA = [
   },
   {
     id: 4,
-    title: "pasta",
+    title: "mandelrostad blomkål med linser och yoghurt",
     image:
-      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_228209/cf_259/kycklingcarbonara_med_grona_artor.jpg",
+      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_201602/cf_259/mandelrostad_blomkal_med_linser_och_yoghurt.jpg",
     ingredients: [
       {
         id: 1,
@@ -153,9 +153,9 @@ const DUMMY_DATA = [
   },
   {
     id: 5,
-    title: "pasta",
+    title: "drum sticks chimichurri med rostad potatis",
     image:
-      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_228209/cf_259/kycklingcarbonara_med_grona_artor.jpg",
+      "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_229576/cf_259/drum_sticks_chimichurri_med_rostad_potatis.jpg",
     ingredients: [
       {
         id: 1,
@@ -193,6 +193,7 @@ const DUMMY_DATA = [
 function RecipeList(props) {
   return (
     <div className={classes.recipe__list__container}>
+      <h2 className={classes.recipe__list__title}>Title</h2>
       <ul className={classes.recipe__list__wrapper}>
         {DUMMY_DATA.map((recipe) => {
           return (
