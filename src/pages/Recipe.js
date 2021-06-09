@@ -5,8 +5,6 @@ function RecipePage() {
   return (
     <div>
       <RecipeList />
-      <RecipeList />
-      <RecipeList />
       <Footer />
     </div>
   );

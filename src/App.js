@@ -6,6 +6,8 @@ import UserPage from "./pages/User";
 import ArchivePage from "./pages/Archive";
 import RecipePage from "./pages/Recipe";
 
+// to publish to github: yarn run deploy
+
 function App() {
   return (
     <>

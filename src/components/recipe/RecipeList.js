@@ -1,6 +1,8 @@
 import classes from "./RecipeList.module.css";
+import axios from "axios";
 
 import RecipeItem from "./RecipeItem";
+import { Component } from "react";
 
 const DUMMY_DATA = [
   {
@@ -190,24 +192,44 @@ const DUMMY_DATA = [
   },
 ];
 
-function RecipeList(props) {
-  return (
-    <div className={classes.recipe__list__container}>
-      <h2 className={classes.recipe__list__title}>Title</h2>
-      <ul className={classes.recipe__list__wrapper}>
-        {DUMMY_DATA.map((recipe) => {
-          return (
-            <RecipeItem
-              key={recipe.id}
-              id={recipe.id}
-              image={recipe.image}
-              title={recipe.title}
-            />
-          );
-        })}
-      </ul>
-    </div>
-  );
+const api = axios.create({
+  baseURL: "http://localhost:8080/api/v1",
+});
+
+class RecipeList extends Component {
+  state = {
+    recipes: [],
+    category: "",
+  };
+
+  constructor() {
+    super();
+    api.get("/recipe").then((resp) => {
+      console.log(resp.data);
+
+      this.setState({ recipes: resp.data, category: resp.data[0].category });
+    });
+  }
+
+  render() {
+    return (
+      <div className={classes.recipe__list__container}>
+        <h2 className={classes.recipe__list__title}>{this.state.category}</h2>
+        <ul className={classes.recipe__list__wrapper}>
+          {this.state.recipes.map((recipe) => {
+            return (
+              <RecipeItem
+                key={recipe.id}
+                id={recipe.id}
+                image={recipe.image}
+                title={recipe.title}
+              />
+            );
+          })}
+        </ul>
+      </div>
+    );
+  }
 }
 
 export default RecipeList;
